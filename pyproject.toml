@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "gsplats-expr"
+version = "0.1.0"
+description = ""
+authors = ["belkakari"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+torch = "^2.3.1"
+numpy = "^1.26.4"
+pillow = "^10.3.0"
+opencv-python = "^4.10.0.82"
+pre-commit = "^3.7.1"
+diffusers = "^0.28.2"
+transformers = "^4.41.2"
+gsplat = "^1.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
