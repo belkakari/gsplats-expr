@@ -77,9 +77,9 @@ RUN CUDA_VER=$(echo "${CUDA_VERSION}" | sed 's/.$//' | tr -d '.') && python3.10 
     torchvision==0.15.2+cu${CUDA_VER} \
         --extra-index-url https://download.pytorch.org/whl/cu${CUDA_VER}
 
-RUN pip install numpy pillow ipykernel jupyter matplotlib setuptools==69.5.1 einops
+RUN pip install numpy pillow ipykernel jupyter matplotlib setuptools==69.5.1 einops opencv-python
 
-RUN pip install transformers
+RUN pip install transformers accelerate
 
 RUN pip install git+https://github.com/huggingface/diffusers
 
