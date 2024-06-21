@@ -83,6 +83,10 @@ RUN pip install transformers accelerate
 
 RUN pip install git+https://github.com/huggingface/diffusers
 
+RUN pip install gsplat
+
+RUN pip install ipywidgets==7.7.1
+
 # Bash as default entrypoint.
 CMD /bin/bash -l
 # Force changing password on first container run
