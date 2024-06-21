@@ -77,7 +77,7 @@ RUN CUDA_VER=$(echo "${CUDA_VERSION}" | sed 's/.$//' | tr -d '.') && python3.10 
     torchvision==0.15.2+cu${CUDA_VER} \
         --extra-index-url https://download.pytorch.org/whl/cu${CUDA_VER}
 
-RUN pip install numpy pillow ipykernel jupyter matplotlib setuptools==69.5.1 einops opencv-python zuko
+RUN pip install "numpy<2.0" pillow ipykernel jupyter matplotlib setuptools==69.5.1 einops opencv-python zuko
 
 RUN pip install transformers accelerate
 
